@@ -1,1 +1,17 @@
-$color-principal : red;
+// Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+$fuente-principal: 'Poppins', sans-serif;
+
+// Colores
+$color-principal:#FF9F1C;
+$color-opacidad:#020202ad;
+$color-blanco: #fff;
+$color-negro: #22272C;
+
+// Breakpoints
+
+$SM: 576px;
+$MD: 768px;
+$LG: 992px;
+$XL: 1200px;
+$XXL: 1400px;

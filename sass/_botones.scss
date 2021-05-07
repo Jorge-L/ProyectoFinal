@@ -1,0 +1,18 @@
+.btn-primario{
+    background-color: $color-principal;
+    color: $color-blanco;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    
+    border: 1px solid  $color-principal;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    &:hover{
+        color:$color-blanco;
+        -webkit-transition: .3s;
+        transition: .3s;
+        background: transparent;
+    }
+}
