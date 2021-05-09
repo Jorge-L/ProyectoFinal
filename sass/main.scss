@@ -19,12 +19,172 @@ a{
 .contenedor-principal{
     max-width: $XXL;
     margin: 0 auto;
-}
 
-.contenedor-tours{
-    padding: 30px 0;
     h3{
         color: $color-negro;
         font-size: 30px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+}
+
+.contenedor-tours{
+    padding: 60px 0;
+
+
+}
+
+.listado{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+
+    border-radius: 6px;
+    border: 1px solid $color-gris;
+    width: 360px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+
+    img{
+        max-width: 100%;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .item-contenido{
+        padding: 20px;
+    }
+
+    .item-titulo{
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 600;
+        color: $color-negro;
+    }
+
+    .item-descripcion{
+        font-size: 14px;
+        font-weight: 300;
+        color:$color-gris-oscuro;
+    }
+
+    .item-precio{
+        font-size: 20px;
+        font-weight: 600;
+        color: $color-principal
+    }
+
+}
+.item-contenedor-precios{
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+
+    p{
+        display: inline-block;
+    }
+    .item-precio-tachado{
+        margin-left: 10px;
+        text-decoration: line-through;
+        color:$color-gris-oscuro;
+        font-size: 14px;
+
+    }
+}
+
+.acerca-de-contenido{
+    display: flex;
+    padding-bottom: 60px;
+    img{
+        max-width: 550px;
+    }
+
+    .contenido-texto{
+        margin-left: 25px;
+    }
+
+    h4{
+        font-size: 30px;
+        text-transform: capitalize;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+    p{
+        margin-bottom: 25px;
+    }
+
+}
+
+.formulario-contacto{
+    background-color: $color-gris-2;
+    padding: 60px 0;
+}
+
+.lista-contacto{
+    display: flex;
+    justify-content: space-between;
+
+    i{
+        font-size: 20px;
+        color: $color-principal;
+        height: 50px;
+        width: 50px;
+        border: 1px solid $color-principal;
+        border-radius: 50%;
+        line-height: 50px;
+        text-align: center;
+        -webkit-transition: .3s;
+        transition: .3s;
+        margin: 20px 20px 20px 0;
+
+
+        &:hover{
+            font-size: 25px;
+            background-color: $color-principal;
+            color: white;
+
+            line-height: 50px;
+
+        }
+    }
+}
+
+.contenido-contacto{
+    display: flex;
+    align-items: center;
+}
+
+form{
+
+margin-top: 25px;
+
+    input[type=text],
+    input[type=email],
+    textarea{
+        display: block;
+        border: 0px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.42857143;
+        color: #000;
+        background-color: transparent;
+        background-image: none;
+        border-radius: 0px;
+        box-shadow: none;
+        margin-bottom: 10px;
+        padding: 10px 7px 14px 15px;
+        border: 1px solid #f2f2f2;
+        background: #fff;
+        border-radius: 5px;
+        -webkit-transition: .3s;
+        transition: .3s;
+
+        &:focus{
+            border-color: #FF9F1C;
+            outline: 0;
+            box-shadow: none;
+        }
     }
 }

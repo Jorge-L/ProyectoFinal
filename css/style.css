@@ -14,6 +14,22 @@
     transition: .3s;
     background: transparent; }
 
+.btn-primario-2 {
+  background-color: #FF9F1C;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  border: 1px solid #FF9F1C;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif; }
+  .btn-primario-2:hover {
+    color: #22272C;
+    -webkit-transition: .3s;
+    transition: .3s;
+    background: transparent; }
+
 .contenedor-banner {
   height: 100vh;
   background: url("../assets/IBIZA.jpg");
@@ -53,9 +69,125 @@ a {
 .contenedor-principal {
   max-width: 1400px;
   margin: 0 auto; }
+  .contenedor-principal h3 {
+    color: #22272C;
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-align: center; }
 
 .contenedor-tours {
-  padding: 30px 0; }
-  .contenedor-tours h3 {
-    color: #22272C;
-    font-size: 30px; }
+  padding: 60px 0; }
+
+.listado {
+  display: flex;
+  flex-wrap: wrap; }
+
+.item {
+  border-radius: 6px;
+  border: 1px solid #e6e6e6;
+  width: 360px;
+  margin-left: 25px;
+  margin-bottom: 25px; }
+  .item img {
+    max-width: 100%;
+    border-radius: 6px 6px 0 0; }
+  .item .item-contenido {
+    padding: 20px; }
+  .item .item-titulo {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #22272C; }
+  .item .item-descripcion {
+    font-size: 14px;
+    font-weight: 300;
+    color: #333333; }
+  .item .item-precio {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF9F1C; }
+
+.item-contenedor-precios {
+  margin-top: 20px;
+  display: flex;
+  align-items: center; }
+  .item-contenedor-precios p {
+    display: inline-block; }
+  .item-contenedor-precios .item-precio-tachado {
+    margin-left: 10px;
+    text-decoration: line-through;
+    color: #333333;
+    font-size: 14px; }
+
+.acerca-de-contenido {
+  display: flex;
+  padding-bottom: 60px; }
+  .acerca-de-contenido img {
+    max-width: 550px; }
+  .acerca-de-contenido .contenido-texto {
+    margin-left: 25px; }
+  .acerca-de-contenido h4 {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 25px; }
+  .acerca-de-contenido p {
+    margin-bottom: 25px; }
+
+.formulario-contacto {
+  background-color: #F7F7F7;
+  padding: 60px 0; }
+
+.lista-contacto {
+  display: flex;
+  justify-content: space-between; }
+  .lista-contacto i {
+    font-size: 20px;
+    color: #FF9F1C;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #FF9F1C;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin: 20px 20px 20px 0; }
+    .lista-contacto i:hover {
+      font-size: 25px;
+      background-color: #FF9F1C;
+      color: white;
+      line-height: 50px; }
+
+.contenido-contacto {
+  display: flex;
+  align-items: center; }
+
+form {
+  margin-top: 25px; }
+  form input[type=text],
+  form input[type=email],
+  form textarea {
+    display: block;
+    border: 0px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #000;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 10px;
+    padding: 10px 7px 14px 15px;
+    border: 1px solid #f2f2f2;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    form input[type=text]:focus,
+    form input[type=email]:focus,
+    form textarea:focus {
+      border-color: #FF9F1C;
+      outline: 0;
+      box-shadow: none; }
