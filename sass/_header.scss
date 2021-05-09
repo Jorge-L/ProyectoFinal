@@ -6,17 +6,40 @@
     background-size: cover;
 }
 
+.menu {
+
+    padding-top: 50px;
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    a{
+        padding-left: 25px;
+        padding-right: 25px;
+        color: $color-blanco;
+        &:hover{
+            color: $color-principal;
+        }
+    }
+}
+
+
+
 .overlay{
 
     height: 100vh;
     background-color:$color-opacidad;
     text-transform: capitalize;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    .overlay-contenido{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-    align-items: center;
 
     h1{
         color:$color-blanco;
@@ -34,4 +57,33 @@
     em{
         color: $color-principal;
     }
+
+    @media (max-width: $LG) {
+        h1{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 30px;
+        }    
+    }
+
+    @media (max-width: $MD) {
+        h1{
+            font-size: 40px;
+        }
+        h2{
+            font-size: 20px;
+        }    
+    }
+
+    @media (max-width: $SM) {
+        h1{
+            font-size: 30px;
+        }
+        h2{
+            font-size: 20px;
+        }    
+    }    
+
+
 }

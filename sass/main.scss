@@ -96,9 +96,29 @@ a{
 
 .acerca-de-contenido{
     display: flex;
+    align-items: center;
     padding-bottom: 60px;
+
+    @media (max-width: $XL) {
+        padding: 0 25px 60px 25px;
+    }
+
+    @media (max-width: $MD) {
+        flex-direction: column;;
+    }
+
+
     img{
         max-width: 550px;
+
+        @media (max-width: $LG) {
+            max-width: 50%; 
+            height: 300px;       
+        }
+
+        @media (max-width: $MD) {
+            max-width: 80%;
+        }
     }
 
     .contenido-texto{
@@ -110,10 +130,17 @@ a{
         text-transform: capitalize;
         font-weight: 400;
         margin-bottom: 25px;
+
+        @media (max-width: $MD) {
+            text-align: center;
+            margin-top: 25px;
+        }
     }
     p{
         margin-bottom: 25px;
     }
+
+
 
 }
 
@@ -125,6 +152,16 @@ a{
 .lista-contacto{
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $XL) {
+        padding: 0 50px;
+    }
+
+    @media (max-width: $LG) {
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
 
     i{
         font-size: 20px;
@@ -149,12 +186,35 @@ a{
 
         }
     }
+
+    h2{
+        @media (max-width: $MD) {
+            font-size: 15px;
+        }
+    }
+    p{
+        @media (max-width: $MD) {
+            font-size: 12px;
+        }
+    }
+
 }
+
 
 .contenido-contacto{
     display: flex;
     align-items: center;
 }
+
+.formulario{
+    @media (max-width: $XL) {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 25px;
+    } 
+}
+
+
 
 form{
 
@@ -182,7 +242,7 @@ margin-top: 25px;
         transition: .3s;
 
         &:focus{
-            border-color: #FF9F1C;
+            border-color: $color-principal;
             outline: 0;
             box-shadow: none;
         }

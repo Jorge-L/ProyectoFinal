@@ -35,14 +35,29 @@
   background: url("../assets/IBIZA.jpg");
   background-size: cover; }
 
+.menu {
+  padding-top: 50px; }
+  .menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none; }
+  .menu a {
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #fff; }
+    .menu a:hover {
+      color: #FF9F1C; }
+
 .overlay {
   height: 100vh;
   background-color: #020202ad;
-  text-transform: capitalize;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  text-transform: capitalize; }
+  .overlay .overlay-contenido {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .overlay h1 {
     color: #fff;
     font-weight: 700;
@@ -54,6 +69,21 @@
     margin-bottom: 25px; }
   .overlay em {
     color: #FF9F1C; }
+  @media (max-width: 992px) {
+    .overlay h1 {
+      font-size: 50px; }
+    .overlay h2 {
+      font-size: 30px; } }
+  @media (max-width: 768px) {
+    .overlay h1 {
+      font-size: 40px; }
+    .overlay h2 {
+      font-size: 20px; } }
+  @media (max-width: 576px) {
+    .overlay h1 {
+      font-size: 30px; }
+    .overlay h2 {
+      font-size: 20px; } }
 
 * {
   padding: 0;
@@ -121,9 +151,23 @@ a {
 
 .acerca-de-contenido {
   display: flex;
+  align-items: center;
   padding-bottom: 60px; }
+  @media (max-width: 1200px) {
+    .acerca-de-contenido {
+      padding: 0 25px 60px 25px; } }
+  @media (max-width: 768px) {
+    .acerca-de-contenido {
+      flex-direction: column; } }
   .acerca-de-contenido img {
     max-width: 550px; }
+    @media (max-width: 992px) {
+      .acerca-de-contenido img {
+        max-width: 50%;
+        height: 300px; } }
+    @media (max-width: 768px) {
+      .acerca-de-contenido img {
+        max-width: 80%; } }
   .acerca-de-contenido .contenido-texto {
     margin-left: 25px; }
   .acerca-de-contenido h4 {
@@ -131,6 +175,10 @@ a {
     text-transform: capitalize;
     font-weight: 400;
     margin-bottom: 25px; }
+    @media (max-width: 768px) {
+      .acerca-de-contenido h4 {
+        text-align: center;
+        margin-top: 25px; } }
   .acerca-de-contenido p {
     margin-bottom: 25px; }
 
@@ -141,6 +189,14 @@ a {
 .lista-contacto {
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 1200px) {
+    .lista-contacto {
+      padding: 0 50px; } }
+  @media (max-width: 992px) {
+    .lista-contacto {
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center; } }
   .lista-contacto i {
     font-size: 20px;
     color: #FF9F1C;
@@ -158,10 +214,22 @@ a {
       background-color: #FF9F1C;
       color: white;
       line-height: 50px; }
+  @media (max-width: 768px) {
+    .lista-contacto h2 {
+      font-size: 15px; } }
+  @media (max-width: 768px) {
+    .lista-contacto p {
+      font-size: 12px; } }
 
 .contenido-contacto {
   display: flex;
   align-items: center; }
+
+@media (max-width: 1200px) {
+  .formulario {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px; } }
 
 form {
   margin-top: 25px; }
